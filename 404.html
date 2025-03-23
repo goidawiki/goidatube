@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница не найдена на ГойдаТуб - православном видеохостинге СВОи видео. Вернитесь на главную!">
+    <meta name="keywords" content="ГойдаТуб, 404, страница не найдена, русский дух, гойда, пародия">
+    <meta name="author" content="ГойдаТуб">
+    <meta name="robots" content="noindex">
+    <!-- Open Graph -->
+    <meta property="og:title" content="404 - Страница не найдена | ГойдаТуб">
+    <meta property="og:description" content="Ой, страница потерялась! Гойдайте обратно на главную ГойдаТуб!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goidatube.ru/404.html">
+    <meta property="og:image" content="https://lh6.googleusercontent.com/TdWoGY4W1ql6MLzOLK1a-6yNjQFD50v4lC-OM_fS17CcsUDPhSUf9Vz6IFX_QiWCDJ462WhCiu3V6M2Uhbor-FdphjlThCyBOoHmqzXHqgPj1zkkFTeIXESMTfWpM_9GQA=w1280">
+    <title>404 - Страница не найдена | ГойдаТуб</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png">
+    <script async src="https://cse.google.com/cse.js?cx=513d32e174d704016"></script>
+    <script>
+        window.onload = function() {
+            // Переключение тем
+            const toggleButton = document.getElementById('theme-toggle');
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            toggleButton.textContent = currentTheme === 'light' ? 'Тёмная тема' : 'Светлая тема';
+
+            toggleButton.addEventListener('click', () => {
+                const newTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                toggleButton.textContent = newTheme === 'light' ? 'Тёмная тема' : 'Светлая тема';
+            });
+        };
+    </script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "404 - Страница не найдена",
+        "url": "https://goidatube.ru/404.html",
+        "description": "Страница не найдена на ГойдаТуб",
+        "image": "https://lh6.googleusercontent.com/TdWoGY4W1ql6MLzOLK1a-6yNjQFD50v4lC-OM_fS17CcsUDPhSUf9Vz6IFX_QiWCDJ462WhCiu3V6M2Uhbor-FdphjlThCyBOoHmqzXHqgPj1zkkFTeIXESMTfWpM_9GQA=w1280"
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="index.html"><h1>ГойдаТуб</h1></a>
+            <p>СВОи видео</p>
+        </div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">Тёмная тема</button>
+    </header>
+    <main class="error-container">
+        <section class="error-card">
+            <img src="https://lh6.googleusercontent.com/TdWoGY4W1ql6MLzOLK1a-6yNjQFD50v4lC-OM_fS17CcsUDPhSUf9Vz6IFX_QiWCDJ462WhCiu3V6M2Uhbor-FdphjlThCyBOoHmqzXHqgPj1zkkFTeIXESMTfWpM_9GQA=w1280" alt="Православный богатырь в смятении" class="error-image">
+            <h2>404 - ГОЙДА ПОШЛА НЕ ТУДА!</h2>
+            <p>Братья и сестры, сия страница ушла в скитания, подобно богатырю без пути! Не гневайтесь, ибо путь праведный лежит назад, к святой главной странице ГойдаТуба. Гойдайте с нами, и да пребудет с вами русский дух!</p>
+            <a href="index.html" class="back-button">на главную</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Хотите добавить ваше православное видео на ГойдаТуб? Пишите на почту <a href="mailto:meoio@tuta.io">meoio@tuta.io</a>. Видео прикрепляйте как ссылку на облачное хранилище.</p>
+        <p>Этот сайт есть творение шуточное и пародийное, дабы сердца ваши возрадовать. Не ищите здесь обмана, токмо смех и веселие. СлаVа вам, православные!</p>
+    </footer>
+</body>
+</html>
