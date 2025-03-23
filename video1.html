@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Смотрите ПРАВОСЛАВНЫЙ ЭДИТ БОГАТЫРЮ РУССКОМУ БИЛЛИ на ГойдаТуб - пародийном православном видеохостинге СВОи видео">
+    <meta name="keywords" content="православный эдит, богатырь Билли, ГойдаТуб, русский дух, гойда, пародия">
+    <meta name="author" content="ГойдаТуб">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:title" content="ПРАВОСЛАВНЫЙ ЭДИТ БОГАТЫРЮ РУССКОМУ БИЛЛИ - ГойдаТуб">
+    <meta property="og:description" content="Пародийный православный эдит богатырю Билли на ГойдаТуб. Гойдайте с нами!">
+    <meta property="og:type" content="video.other">
+    <meta property="og:url" content="https://goidatube.ru/video1.html">
+    <meta property="og:image" content="https://brokencore.club/data/avatars/o/90/90435.jpg?1695221351">
+    <meta property="og:video" content="https://kinescope.io/embed/0AHYYqGViEQ679TCqkhFe7">
+    <title>ПРАВОСЛАВНЫЙ ЭДИТ БОГАТЫРЮ РУССКОМУ БИЛЛИ - ГойдаТуб</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png">
+    <script async src="https://cse.google.com/cse.js?cx=513d32e174d704016"></script>
+    <script>
+        function getRandomLikes() {
+            return Math.floor(Math.random() * (200000 - 100000 + 1)) + 100000;
+        }
+        window.onload = function() {
+            document.querySelector('.likes-count').textContent = getRandomLikes().toLocaleString('ru');
+            const toggleButton = document.getElementById('theme-toggle');
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            toggleButton.textContent = currentTheme === 'light' ? 'Тёмная тема' : 'Светлая тема';
+
+            toggleButton.addEventListener('click', () => {
+                const newTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                toggleButton.textContent = newTheme === 'light' ? 'Тёмная тема' : 'Светлая тема';
+            });
+        };
+    </script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "ПРАВОСЛАВНЫЙ ЭДИТ БОГАТЫРЮ РУССКОМУ БИЛЛИ",
+        "description": "Пародийный православный эдит богатырю Билли на ГойдаТуб",
+        "thumbnailUrl": "https://brokencore.club/data/avatars/o/90/90435.jpg?1695221351",
+        "uploadDate": "2025-03-22",
+        "contentUrl": "https://kinescope.io/embed/0AHYYqGViEQ679TCqkhFe7",
+        "embedUrl": "https://kinescope.io/embed/0AHYYqGViEQ679TCqkhFe7"
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="index.html"><h1>ГойдаТуб</h1></a>
+            <p>СВОи видео</p>
+        </div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">Тёмная тема</button>
+    </header>
+    <main class="video-container">
+        <article>
+            <h2 class="video-title">ПРАВОСЛАВНЫЙ ЭДИТ БОГАТЫРЮ РУССКОМУ БИЛЛИ</h2>
+            <div class="video-player">
+                <div class="video-player-wrapper">
+                    <iframe src="https://kinescope.io/embed/0AHYYqGViEQ679TCqkhFe7" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-stats">
+                <span class="like">👍 <span class="likes-count">0</span></span>
+                <span class="dislike">👎 0</span>
+            </div>
+            <section class="comments">
+                <div class="comment">Гойда, братья! Это вам не хохлятский тик-ток, тут сила русская!</div>
+                <div class="comment">Билли — истинный богатырь, Запад в шоке от нашего духа!</div>
+                <div class="comment">ПраVослаVие рулит, либерасты плачут, гойдайте дальше!</div>
+                <div class="comment">Крым наш, а Билли — наш герой, Zа Россию!</div>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <p>Хотите добавить ваше православное видео на ГойдаТуб? Пишите на почту <a href="mailto:meoio@tuta.io">meoio@tuta.io</a>. Видео прикрепляйте как ссылку на облачное хранилище.</p>
+        <p>Этот сайт является полностью шуточным и пародийным. Не преследует цель обмана или введения в заблуждение. Сайт создан исключительно для развлекательных и пародийных целей. Пожалуйста, относитесь к содержанию с юмором и не воспринимайте его всерьез. Спасибо за ваше понимание!</p>
+    </footer>
+</body>
+</html>

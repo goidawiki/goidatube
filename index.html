@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ГойдаТуб - православный видеохостинг СВОи видео. Смотрите и делитесь святыми роликами во славу духу русскому!">
+    <meta name="keywords" content="ГойдаТуб, православный видеохостинг, русский дух, гойда, СВОи видео, пародия">
+    <meta name="author" content="ГойдаТуб">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:title" content="ГойдаТуб - СВОи видео">
+    <meta property="og:description" content="Православный видеохостинг с пародийным контентом во славу духу русскому. Гойда) с нами!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goidatube.ru/">
+    <meta property="og:image" content="https://brokencore.club/data/avatars/o/90/90435.jpg?1695221351">
+    <title>ГойдаТуб - СВОи видео</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png">
+    <script async src="https://cse.google.com/cse.js?cx=513d32e174d704016"></script>
+    <script>
+        function getRandomLikes() {
+            return Math.floor(Math.random() * (200000 - 100000 + 1)) + 100000;
+        }
+        window.onload = function() {
+            document.querySelectorAll('.likes-count').forEach(element => {
+                element.textContent = getRandomLikes().toLocaleString('ru');
+            });
+
+            // Переключение тем
+            const toggleButton = document.getElementById('theme-toggle');
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            toggleButton.textContent = currentTheme === 'light' ? 'Тёмная тема' : 'Светлая тема';
+
+            toggleButton.addEventListener('click', () => {
+                const newTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                toggleButton.textContent = newTheme === 'light' ? 'Тёмная тема' : 'Светлая тема';
+            });
+        };
+    </script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ГойдаТуб",
+        "url": "https://goidatube.ru/",
+        "description": "Православный видеохостинг, СВОи видео, Российская Альтернатива Youtube",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://goidatube.ru/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="index.html"><h1>ГойдаТуб</h1></a>
+            <p>СВОи видео</p>
+        </div>
+        <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">Тёмная тема</button>
+    </header>
+    <main>
+        <section class="welcome-banner">
+            <h2>ДОБРО ПОЖАЛОВАТЬ НА ГОЙДАTUBE</h2>
+            <p>Православный видеохостинг СВОи видео во славу русского духа! Гойда) ZOV SVO.</p>
+        </section>
+        <section class="main-container">
+            <article class="video-card">
+                <a href="video1.html">
+                    <img src="https://brokencore.club/data/avatars/o/90/90435.jpg?1695221351" alt="Православный эдит богатырю русскому Билли">
+                    <h3>ПРАВОСЛАВНЫЙ ЭДИТ БОГАТЫРЮ РУССКОМУ БИЛЛИ</h3>
+                    <div class="video-stats-index">
+                        <span class="like">👍 <span class="likes-count">0</span></span>
+                        <span class="dislike">👎 0</span>
+                    </div>
+                </a>
+            </article>
+            <article class="video-card">
+                <a href="video2.html">
+                    <img src="https://i.imgur.com/Vnv2cFt.jpeg" alt="От Стахия Васильева 1:1">
+                    <h3>ОТ СТАХИЯ ВАСИЛЬЕВА 1:1</h3>
+                    <div class="video-stats-index">
+                        <span class="like">👍 <span class="likes-count">0</span></span>
+                        <span class="dislike">👎 0</span>
+                    </div>
+                </a>
+            </article>
+            <article class="video-card">
+                <a href="video3.html">
+                    <img src="https://lh5.googleusercontent.com/h6DYepOd8SjYBtfm-LUWN8I0naqQa56u4vcc_UAA60dmSIbj6FBtWTVqkz8XBB2grrLv4ueHp1hVdCbSgI7lkZAvPGlV50pmyvN1YRaGg-Z2Q0ezO5A3ZCx_hfZm-PTd-g=w1280" alt="MGE EDIT by JAQIO">
+                    <h3>MGE EDIT BY JAQIO</h3>
+                    <div class="video-stats-index">
+                        <span class="like">👍 <span class="likes-count">0</span></span>
+                        <span class="dislike">👎 0</span>
+                    </div>
+                </a>
+            </article>
+            <article class="video-card">
+                <a href="video4.html">
+                    <img src="https://lh5.googleusercontent.com/j26D0HzSFAcR0dC5Qt3_rfSjZLds7dChdDtyCw9WrRUtZQVecFEHvVA_fKRE-33sAHy2gMIND37fBx76fT-v_ymqi3rC1uF-_Nxb1dPIrvbzgNlglfvgsZ_GDcB7J6EHCw=w1280" alt="Обращение к НАТО от ГойдаТуб">
+                    <h3>ОБРАЩЕНИЕ К НАТО ОТ ГОЙДАTUBE</h3>
+                    <div class="video-stats-index">
+                        <span class="like">👍 <span class="likes-count">0</span></span>
+                        <span class="dislike">👎 0</span>
+                    </div>
+                </a>
+            </article>
+            <article class="video-card">
+                <a href="video5.html">
+                    <img src="https://lh4.googleusercontent.com/EQubvw8ZB382i26QkpkIGZDY0b8wc_CM2s42g2E9omqu9uIQ26QwGHW2ilDIpyp9kMpDXoTO9GsBLRbfvwZNoNt01SHTO3ftzEPX0jq_J9z5H4lS3SUwgYn2iCGVHVfi=w1280" alt="TOTALEN KRIEG by Pretty Violet">
+                    <h3>TOTALEN KRIEG BY PRETTY VIOLET</h3>
+                    <div class="video-stats-index">
+                        <span class="like">👍 <span class="likes-count">0</span></span>
+                        <span class="dislike">👎 0</span>
+                    </div>
+                </a>
+            </article>
+            <article class="video-card">
+                <a href="video6.html">
+                    <img src="https://lh5.googleusercontent.com/uFa7iTlEXVMvwiHSMdrt4NCvPK33I-ibHxnqyyBFhInCzkgTYsGPL74rA6VHcViLZS_1LdKgvfY2kbteAr0U7Oo=w1280" alt="ЧУВААААААААААААААААААААААААААААААААААК">
+                    <h3>ЧУВААААААААААААААААААААААААААААААААААК</h3>
+                    <div class="video-stats-index">
+                        <span class="like">👍 <span class="likes-count">0</span></span>
+                        <span class="dislike">👎 0</span>
+                    </div>
+                </a>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Хотите добавить ваше православное видео на ГойдаТуб? Пишите на почту <a href="mailto:meoio@tuta.io">meoio@tuta.io</a>. Видео прикрепляйте как ссылку на облачное хранилище.</p>
+        <p>Этот сайт является полностью шуточным и пародийным. Не преследует цель обмана или введения в заблуждение. Сайт создан исключительно для развлекательных и пародийных целей. Пожалуйста, относитесь к содержанию с юмором и не воспринимайте его всерьез. Спасибо за ваше понимание!</p>
+    </footer>
+</body>
+</html>
